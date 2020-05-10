@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="helpdesk_ticket_form_subject_validation.status_helpdesk_subject_length">
+        <span id="o_website_form_helpdesk_result" class="text-danger ml8">
+            <i class="fa fa-close mr4" role="img" aria-label="Error" title="Error"/>Field subject more than 200
+        </span>
+    </t>
+</templates>

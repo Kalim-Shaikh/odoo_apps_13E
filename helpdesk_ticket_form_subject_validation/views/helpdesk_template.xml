@@ -1,0 +1,12 @@
+<odoo>
+    <template id="assets_editor" name="Website Form Editor Assets Editor" inherit_id="website.assets_editor">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/helpdesk_ticket_form_subject_validation/static/src/js/website_form_editor.js"/>
+        </xpath>
+    </template>
+    <template id="ticket_submit_inherit_subject" inherit_id="website_helpdesk_form.ticket_submit">
+        <xpath expr="//input[@name='name']" position="attributes">
+            <attribute name="data-input-helpdesk">helpdesk_input_subject</attribute>
+        </xpath>
+    </template>
+</odoo>
