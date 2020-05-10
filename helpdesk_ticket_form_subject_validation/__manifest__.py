@@ -5,6 +5,7 @@
     'version' : '1.0',
     'summary': 'Helpdesk Ticket Form Subject Validation',
     'sequence': 15,
+    'price': '45.0',
     'description': """
 Helpdesk Ticket Form Subject Validation
 Helpdesk Ticket Form Subject Validation
