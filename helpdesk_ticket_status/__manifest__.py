@@ -5,6 +5,7 @@
     'version' : '1.0',
     'summary': 'Helpdesk Ticket Satus',
     'sequence': 15,
+    'price': 45.0,
     'description': """
 Helpdesk Ticket Satus
 Helpdesk Ticket Satus visble to portal user
