@@ -5,7 +5,7 @@
     'version' : '1.0',
     'summary': 'Helpdesk Ticket Priority Extend Dashboard',
     'sequence': 15,
-    'price': 60,
+    'price': 60.0,
     'description': """
 Helpdesk Ticket Priority Extend Dashboard
 Helpdesk Ticket Priority Extend Dashboard
