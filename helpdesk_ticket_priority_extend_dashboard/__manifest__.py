@@ -19,6 +19,7 @@ Helpdesk Ticket Priority Extend Dashboard
     ],
     'data': [
         'views/helpdesk_ticket_view.xml',
+        'views/helpdesk_template.xml',
     ],
     'qweb': [
         "static/src/xml/helpdesk_team_templates.xml",

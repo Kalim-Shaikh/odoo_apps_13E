@@ -1,0 +1,7 @@
+<odoo>
+    <template id="ticket_submit_inherit_attachment_accepts" inherit_id="website_helpdesk_form.ticket_submit">
+        <xpath expr="//input[@name='attachments']" position="attributes">
+            <attribute name="accept">image/png,image/jpeg,image/gif,application/pdf,.docx,.xlsx,video/mp4</attribute>
+        </xpath>
+    </template>
+</odoo>
