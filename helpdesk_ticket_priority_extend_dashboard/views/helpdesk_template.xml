@@ -1,7 +1,15 @@
 <odoo>
+    <template id="assets_editor" name="Website Form Editor Assets Editor" inherit_id="website.assets_editor">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/helpdesk_ticket_priority_extend_dashboard/static/src/js/website_form_editor.js"/>
+        </xpath>
+    </template>
+
     <template id="ticket_submit_inherit_attachment_accepts" inherit_id="website_helpdesk_form.ticket_submit">
         <xpath expr="//input[@name='attachments']" position="attributes">
             <attribute name="accept">image/png,image/jpeg,image/gif,application/pdf,.docx,.xlsx,video/mp4</attribute>
+            <attribute name="max_file_size_helpdesk">100</attribute>
+            <attribute name="class">form-control o_website_form_input o_hepldesk_file_upload</attribute>
         </xpath>
     </template>
 </odoo>
