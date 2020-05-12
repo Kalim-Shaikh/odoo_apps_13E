@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="helpdesk.HelpdeskDashboard" t-extend="helpdesk.HelpdeskDashboard">
+        <t t-jquery="td[name='helpdesk.helpdesk_ticket_action_urgent']" t-operation="after">
+            <td class="o_main o_dashboard_action" title="My critical tickets" name="helpdesk_ticket_priority_extend_dashboard.helpdesk_ticket_action_critical">
+                <a href="#">
+                    <span class="o_highlight"><t t-esc="values['my_critical']['count']"/></span><br/>
+                    Critical (<span title="Four stars, maximum score" role="img" aria-label="Four stars, maximum score"><span class="fa fa-star" style="color: gold"/><span class="fa fa-star" style="color: gold"/><span class="fa fa-star" style="color: gold"/><span class="fa fa-star" style="color: gold"/></span>)
+                </a>
+            </td>
+        </t>
+        
+        <t t-jquery="td[name='helpdesk.helpdesk_ticket_action_dashboard_urgent']" t-operation="after">
+            <td class="o_main o_dashboard_action" name="helpdesk_ticket_priority_extend_dashboard.helpdesk_ticket_action_dashboard_critical">
+                <a href="#">
+                    <t t-esc="values['my_critical']['hours']"/>
+                </a>
+            </td>
+        </t>
+        
+        <t t-jquery="td[name='helpdesk.helpdesk_ticket_action_sla_urgent']" t-operation="after">
+            <td t-if="success_rate_enable" t-att-class="(values['my_critical']['failed'] ? 'o_warning' : 'o_main') + ' o_dashboard_action'" name="helpdesk_ticket_priority_extend_dashboard.helpdesk_ticket_action_sla_critical" title="View critical failed tickets">
+                <a href="#" data-extra="overdue">
+                    <t t-esc="values['my_critical']['failed']"/>
+                </a>
+            </td>
+        </t>
+    </t>
+
+</templates>
