@@ -11,7 +11,7 @@ Helpdesk Ticket Priority Extend Dashboard
 ====================
 .
     """,
-    'price': 60.0,
+    'price': 55.0,
     'category': 'Operations/Helpdesk',
     'images' : [],
     'depends' : [
