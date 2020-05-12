@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
-    'name' : 'Helpdesk Ticket Priority Extend Dashboard',
+    'name' : 'MK Helpdesk Ticket Extend Dashboard',
     'version' : '1.0',
     'summary': 'Helpdesk Ticket Priority Extend Dashboard',
     'sequence': 15,
